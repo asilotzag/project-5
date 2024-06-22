@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Playfair Display", serif;
+}
+section {
+ background-color: rgb(241, 241, 241);
+  min-height: 100vh;
+}
+.container{
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem 2rem; 
+}
+.content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main {
+  text-align: center;
+}
+.main h1{
+  color: rgb(126, 126, 126);
+  font-weight: 200;
+  font-size: 32px;
+}
+.main h2{
+color: rgb(44, 43, 43); 
+font-size: 31px; 
+font-weight: 700;
+
+}
+.main p {
+  color: rgb(94, 94, 94);
+  margin-top: 20px;
+  max-width: 500px;
+line-height: 1.6;
+}
+  .row {
+    display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  margin-top: 4rem;
+  
+   }
+   .row .col {
+    padding: 20px;
+    box-shadow: 2px 5px 10px rgb(0,0, 0, 0.1) ;
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    border-radius: 8px;
+    position: relative;
+  
+   }  
+   
+   .row .col-2  .coll-1,.coll-2 {
+    margin-bottom: 30px;
+   }
+   .row .col h3 {
+    color: rgb(6, 6, 71);
+    font-size: 20px;
+    margin-bottom: 10px;
+   }
+   .row .col p {
+    color: rgb(38, 72, 103);
+    font-size: 15px;
+    margin-bottom: 20px;
+   }
+   .row .col img {
+    position: absolute;
+   bottom: 20px;
+   right: 20px;
+
+   }
+.row .col-1 {
+  border-top: 4px solid rgb(250, 92, 92);
+}
+.row .col-3 {
+  border-top: 4px solid rgb(92, 250, 163);
+}
+.row .col-2 .coll-1{
+  border-top: 4px solid rgb(92, 166, 250);
+}
+.row .col-2 .coll-2 {
+  border-top: 4px solid rgb(229, 250, 92); 
+}
+/*responsive */
+@media (max-width:800px) {
+
+ .row {
+    grid-template-columns: 1fr;
+}
+.col-1{ 
+  margin-bottom: 20px;
+}
+.main h1, .main h2{
+  font-size: 25px;
+}
+.main p {
+  font-size: 15px;
+}
+}
